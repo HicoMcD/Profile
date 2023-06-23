@@ -1,48 +1,85 @@
 [
-    [
-        {
-            "img" : "https://via.placeholder.com/150",
-            "label": "First Slide",
-            "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            "link": "https://www.google.com/"
-        },
-        {
-            "img": "https://via.placeholder.com/150",
-            "label": "Second Slide",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "link" : "https://www.bing.com/"
-        },
-        {
-            "img": "https://via.placeholder.com/150",
-            "label": "Third Slide",
-            "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-            "link" : "https://www.bing.com/"
-        }
-    ],
-    [
-        {
-            "img" : "https://via.placeholder.com/150",
-            "label": "Windshell",
-            "description": "Bangkok, Thailand",
-            "link": "https://windshell.com/"
-        },
-        {
-            "img": "https://via.placeholder.com/150",
-            "label": "Gouda Wind Farm",
-            "description": "Western Cape, South Africa",
-            "link" : "https://www.acciona.com/projects/gouda-wind-farm/"
-        },
-        {
-            "img": "https://via.placeholder.com/150",
-            "label": "Picasso Villas",
-            "description": "Phuket, Thailand",
-            "link" : ""
-        },
-        {
-            "img" : "https://via.placeholder.com/150",
-            "label": "Koh Koon",
-            "description": "Koh Samui, Thailand",
-            "link": ""
-        } 
-    ]
+    
+    {
+        "web3Projects" : 
+        [
+            {
+                "img" : "https://via.placeholder.com/150",
+                "label": "Escrow",
+                "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                "link": ""
+            },
+            {
+                "img": "https://via.placeholder.com/150",
+                "label": "Token and NFT Indexer",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "link" : ""
+            },
+            {
+                "img": "https://via.placeholder.com/150",
+                "label": "ArchiDAO NFT",
+                "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+                "link" : ""
+            },
+            {
+                "img": "https://via.placeholder.com/150",
+                "label": "Project 4",
+                "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+                "link" : ""
+            }            
+        ]
+
+    },
+    {
+        "constructionProjects" : 
+        [
+            {
+                "img" : "https://via.placeholder.com/150",
+                "label": "Windshell",
+                "description": "Bangkok, Thailand",
+                "link": "https://windshell.com/"                
+            },
+            {
+                "img": "https://via.placeholder.com/150",
+                "label": "Gouda Wind Farm",
+                "description": "Western Cape, South Africa",
+                "link" : "https://www.acciona.com/projects/gouda-wind-farm/"
+            },
+            {
+                "img": "https://via.placeholder.com/150",
+                "label": "Picasso Villas",
+                "description": "Phuket, Thailand",
+                "link" : ""
+            },
+            {
+                "img" : "https://via.placeholder.com/150",
+                "label": "Koh Koon",
+                "description": "Koh Samui, Thailand",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "reactJsProjects":
+        [
+            {
+                "img" : "https://via.placeholder.com/150",
+                "label": "React 1",
+                "description": "This is a project built in React",
+                "link": ""                
+            },
+            {
+                "img" : "https://via.placeholder.com/150",
+                "label": "React 2",
+                "description": "This is a project built in React",
+                "link": ""                
+            },   
+            {
+                "img" : "https://via.placeholder.com/150",
+                "label": "Javascript 1",
+                "description": "This is a project built in JavaScript",
+                "link": ""                
+            }
+        ]
+    }
 ]

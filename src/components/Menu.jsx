@@ -1,8 +1,8 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useDisclosure, Button, Center, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, DrawerFooter, } from '@chakra-ui/react';
 import * as React from 'react';
+import { BsList } from 'react-icons/bs';
 
-  
 export default function Menu () {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef()
@@ -15,7 +15,7 @@ export default function Menu () {
     <Center>
 
       <Button ref={btnRef} onClick={onOpen}>
-        <HamburgerIcon boxSize={16} border='solid green' />
+        <BsList size='3em'/>
       </Button>
 
       <Drawer

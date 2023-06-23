@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Box, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react";
 
 export default function Carousel ({ slides }) {
+  console.log(slides)
 
     const arrowStyles = {
         cursor: "pointer",
@@ -57,6 +58,7 @@ export default function Carousel ({ slides }) {
                 // h="200px" 
                 // w="full" 
                 {...carouselStyle}
+                boxSize={{ base: '100%' }}
             >
               {slides.map((slide, sid) => (
                 <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
@@ -82,7 +84,7 @@ export default function Carousel ({ slides }) {
                   <Stack
                     p="8px 12px"
                     pos="absolute"
-                    bottom="0px"
+                    bottom="40px"
                     textAlign="center"
                     w="full"
                     mb="0"
