@@ -8,17 +8,13 @@ export default function Footer () {
             align='center'
             justify='space-evenly'
             direction='column'
-            // marginTop='10px' 
             height='70px'  
             width='100%'
             backgroundColor='black'
             color='white'
         >
             <HStack>
-            <div>EVM Utilities</div>
-            <div>BlockNumber</div>
-            <div>ETH Price</div>
-            <div>ETH Gas Fees</div>
+                {/* Eth utils */}
             </HStack>
 
             <div>FOOTER</div>

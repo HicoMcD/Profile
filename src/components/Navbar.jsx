@@ -1,13 +1,10 @@
-import { Flex, Box, Center, HStack, Image, Icon, Link, Show, Hide} from '@chakra-ui/react';
-import { BsTelegram, BsLinkedin, BsGithub } from 'react-icons/bs';
-
+import { Flex, Box, Center, HStack, Image, Link, Hide, Heading} from '@chakra-ui/react';
 import Menu from './Menu';
 
 export default function Navbar () {
 
     return (
         <Flex
-            // border='solid blue' 
             background='black'
             color='white'
             justify='space-between'
@@ -16,74 +13,95 @@ export default function Navbar () {
             zIndex='1'
             top='0'
             padding='5px'
+            boxShadow='0 0 5px 5px #453885' //brand.300
         >
             <Box 
                 boxSize='65px' 
-                // border='solid yellow'
             >
-                <Image src='' alt='Dan Abramov' borderRadius='full' fallbackSrc='https://via.placeholder.com/150'/>
+                <Image 
+                    src='./ppic.jpg' 
+                    alt='Hico' 
+                    borderRadius='20px' 
+                    fallbackSrc='https://via.placeholder.com/150'
+                />
             </Box>
             <Flex 
-                border='solid 5px grey'
+                border='solid 2px'
+                borderColor='brand.300'
                 direction='row'
-                width='50%'
+                width='60%'
                 justify='center'
-                borderRadius='20px'
+                align='center'
+                borderRadius='10px'
             >
                 <Hide below='md'>
-                    <Center pl='50px'>Connect with me</Center>
+                    <Center 
+                        pl='50px' 
+                        textAlign='center' 
+                        // border='solid yellow'
+                        align='center'
+                    >
+                        <Heading size='md'>
+                            Connect with me
+                        </Heading>
+                    </Center>
                 </Hide>
                 <HStack
-                    justify='space-around'
-                    // border='solid aqua'
-                    // alignSelf='center'
-                    // height='100vh'
-                    width='80%'
-                    // align='center'
-                    // paddingLeft='28px'
+                    justify='space-around'        
+                    width='100%'
                 >
-
                     <Box 
                         // border='solid red' 
                         boxSize='50px'
-                        // justifyContent='center'
                     >
-                        <Link href='https://www.linkedin.com/' target='_blank' rel="noreferrer">
-                            <BsLinkedin size='3em' style={{ borderRadius: '50%'}} />
+                        <Link 
+                            href='https://www.telegram.com/' 
+                            target='_blank' rel="noreferrer" 
+                        >
+                            <Image 
+                                src='./logos/telegram.svg' 
+                                alt='more text' 
+                                p='1px' 
+                                backgroundColor='white' 
+                                borderRadius='50%' 
+                            />
+                        </Link> 
+                    </Box>
+                    <Box 
+                        // border='solid red' 
+                        boxSize='50px'
+                    >
+                        <Link 
+                            href='https://www.linkedin.com/' 
+                            target='_blank' 
+                            rel="noreferrer">
+                            <Image 
+                                src='./logos/linkedin.svg' 
+                                alt='more text' 
+                                borderRadius='50%' 
+                                p='1px' 
+                                backgroundColor='white' 
+                            />
                         </Link> 
                     </Box>                    
                     <Box 
-                        // border='solid red' 
                         boxSize='50px'
                     >
-                        <Link href='https://www.github.com/' target='_blank' rel="noreferrer" >
-                            <BsGithub size='3em' />
+                        <Link 
+                            href='https://www.github.com/' 
+                            target='_blank' 
+                            rel="noreferrer" >
+                            <Image 
+                                src='./logos/github.svg' 
+                                alt='more text' p='1px' 
+                                backgroundColor='white' 
+                                borderRadius='50%' 
+                            />
                         </Link> 
                     </Box> 
-                    <Box 
-                        // border='solid red' 
-                        boxSize='50px'
-                    >
-                        <Link href='https://www.telegram.com/' target='_blank' rel="noreferrer" >
-                            <BsTelegram size='3em' />
-                        </Link> 
-                    </Box>
                 </HStack>
             </Flex>
             <Menu />
-
-            
         </Flex>
     )
 }
-
-            {/* <Flex
-                flex='1' 
-                border='solid orange' 
-                // backgroundImage='/CigarHomonid.png'
-                backgroundPosition="center"
-                backgroundRepeat="no-repeat"
-                bgSize='cover'
-            >
-                NavBar
-            </Flex> */}

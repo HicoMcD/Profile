@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Box, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Heading, Highlight, Image, Stack, Text } from "@chakra-ui/react";
 
 export default function Carousel ({ slides }) {
-  console.log(slides)
+  // console.log(slides)
 
     const arrowStyles = {
         cursor: "pointer",
@@ -11,7 +11,7 @@ export default function Carousel ({ slides }) {
         w: "auto",
         mt: "-22px",
         p: "16px",
-        color: "white",
+        color: "brand.300",
         fontWeight: "bold",
         fontSize: "18px",
         transition: "0.6s ease",
@@ -43,7 +43,7 @@ export default function Carousel ({ slides }) {
     
       return (
         <Flex
-          border='solid pink'
+          // border='solid pink'
           w="auto"
           bg="#edf3f8"
           _dark={{ bg: "#3e3e3e" }}
@@ -51,17 +51,24 @@ export default function Carousel ({ slides }) {
           alignItems="center"
           justifyContent="center"
         >
-
-          <Flex border='solid green' w="full" pos="relative" overflow="hidden">
+          <Flex 
+            // border='solid green' 
+            w="full" 
+            pos="relative" 
+            overflow="hidden">
 
             <Flex 
-                // h="200px" 
-                // w="full" 
                 {...carouselStyle}
                 boxSize={{ base: '100%' }}
             >
               {slides.map((slide, sid) => (
-                <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
+                <Box 
+                  key={`slide-${sid}`}
+                  // border='solid red' 
+                  boxSize="full" 
+                  shadow="md" 
+                  flex="none" 
+                >
                   <Text
                     color="white"
                     bg='black'
@@ -72,15 +79,19 @@ export default function Carousel ({ slides }) {
                   >
                     {sid + 1} / {slidesCount}
                   </Text>
-                  <a href={slide.link} target="_blank" rel="noreferrer">
+                  {/* <a href={slide.link} target="_blank" rel="noreferrer"> */}
                   <Image
                     src={slide.img}
                     alt="carousel image"
                     boxSize="full"
-                    backgroundSize="cover"
+                    p='10px'
+
+                    objectFit='scale-down'
+                    backgroundColor='brand.200'
+                    height='400px'                    
                     // onClick={slide.click}
                   />
-                  </a>
+                  {/* </a> */}
                   <Stack
                     p="8px 12px"
                     pos="absolute"
@@ -88,23 +99,59 @@ export default function Carousel ({ slides }) {
                     textAlign="center"
                     w="full"
                     mb="0"
-                    color="white"
+                    color="blue"
                   >
-                    <Text fontSize="xl">{slide.label}</Text>
-                    <Text fontSize="md">{slide.description}</Text>
+                    <a 
+                      href={slide.link} 
+                      target="_blank" 
+                      rel="noreferrer"
+                    >
+                      <Heading>
+                        <Highlight 
+                          query={slide.label} 
+                          styles={{bg: 'orange'}}
+                        >
+                          {slide.label}
+                        </Highlight>
+                      </Heading>
+                    </a>
+                    <Heading 
+                      fontSize="sm"
+                    >
+                      <Highlight 
+                        query={slide.description} 
+                        styles={{bg: 'brand.100'}}
+                      >
+                        {slide.description}
+                      </Highlight>
+                    </Heading>
+                    
                   </Stack>
                 </Box>
               ))}
             </Flex>
 
-            <Text {...arrowStyles} left="0" onClick={prevSlide}>
-              &#10094;
+            <Text 
+              {...arrowStyles} 
+              left="0" 
+              onClick={prevSlide}
+            >
+              &#10094; 
             </Text>
-            <Text {...arrowStyles} right="0" onClick={nextSlide}>
+            <Text 
+              {...arrowStyles} 
+              right="0" 
+              onClick={nextSlide}
+            >
               &#10095;
             </Text>
 
-            <HStack justify="center" pos="absolute" bottom="8px" w="full">
+            <HStack 
+              justify="center" 
+              pos="absolute" 
+              bottom="8px" 
+              w="full"
+            >
               {Array.from({ length: slidesCount }).map((_, slide) => (
                 <Box
                   key={`dots-${slide}`}
@@ -120,7 +167,6 @@ export default function Carousel ({ slides }) {
                 ></Box>
               ))}
             </HStack>
-
           </Flex>
         </Flex>
       );

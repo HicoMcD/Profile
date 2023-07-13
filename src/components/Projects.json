@@ -4,25 +4,25 @@
         "web3Projects" : 
         [
             {
-                "img" : "https://via.placeholder.com/150",
-                "label": "Escrow",
-                "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                "img" : "./Escrow.png",
+                "label": "Escrow dApp",
+                "description": "Built as a project for Alchemy University",
                 "link": ""
             },
             {
-                "img": "https://via.placeholder.com/150",
+                "img": "./250.png",
                 "label": "Token and NFT Indexer",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "link" : ""
             },
             {
-                "img": "https://via.placeholder.com/150",
+                "img": "./500.png",
                 "label": "ArchiDAO NFT",
                 "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
                 "link" : ""
             },
             {
-                "img": "https://via.placeholder.com/150",
+                "img": "./500.png",
                 "label": "Project 4",
                 "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
                 "link" : ""
@@ -34,25 +34,25 @@
         "constructionProjects" : 
         [
             {
-                "img" : "https://via.placeholder.com/150",
+                "img" : "./windsO.png",
                 "label": "Windshell",
                 "description": "Bangkok, Thailand",
                 "link": "https://windshell.com/"                
             },
             {
-                "img": "https://via.placeholder.com/150",
+                "img": "./GoudaWindFarmO.png",
                 "label": "Gouda Wind Farm",
                 "description": "Western Cape, South Africa",
                 "link" : "https://www.acciona.com/projects/gouda-wind-farm/"
             },
             {
-                "img": "https://via.placeholder.com/150",
+                "img": "./PicassoVillasPhuketO.png",
                 "label": "Picasso Villas",
                 "description": "Phuket, Thailand",
                 "link" : ""
             },
             {
-                "img" : "https://via.placeholder.com/150",
+                "img" : "./KohKoonO.png",
                 "label": "Koh Koon",
                 "description": "Koh Samui, Thailand",
                 "link": ""
@@ -63,19 +63,19 @@
         "reactJsProjects":
         [
             {
-                "img" : "https://via.placeholder.com/150",
+                "img" : "./150.png",
                 "label": "React 1",
                 "description": "This is a project built in React",
                 "link": ""                
             },
             {
-                "img" : "https://via.placeholder.com/150",
+                "img" : "./150.png",
                 "label": "React 2",
                 "description": "This is a project built in React",
                 "link": ""                
             },   
             {
-                "img" : "https://via.placeholder.com/150",
+                "img" : "./150.png",
                 "label": "Javascript 1",
                 "description": "This is a project built in JavaScript",
                 "link": ""                

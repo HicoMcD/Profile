@@ -1,27 +1,31 @@
-import { Grid, GridItem, Image, Heading, Text, Box, Center, VStack, Stack, Flex, Show, Hide, HStack } from '@chakra-ui/react';
-import { SiReact, SiNodedotjs, SiSolidity, SiChakraui, SiVite } from "react-icons/si";
+import { Grid, GridItem, Image, Heading, Text, Box, Flex, List, ListItem, ListIcon } from '@chakra-ui/react';
+import { ArrowRightIcon } from '@chakra-ui/icons'
+// import WordCarousel from './WordCarousel';
+
 
 export default function Intro() {
+ 
+    // const words = ['Mentor', 'Builder', 'Consultant', 'Learner', 'Partnership Manager'];
 
     return (
         <Grid 
             templateAreas={`"greeting tech"
                             "description description"`}
             gridTemplateRows={'50% 50%'}
-            gridTemplateColumns={'70% 30%'}
-            border='solid blue' 
+            gridTemplateColumns={'60% 40%'}
+            // border='solid blue' 
+            borderRadius='10px'
             margin='10px' 
             height='500px'
             width='100%'
             backgroundColor='black'
             color='white'
+            fontFamily={'font4'}
         >
             <GridItem 
-                border='solid blue' 
+                borderRight='solid white' 
                 display='flex' 
-                flexDirection='row' 
-                pl='2' 
-                bg='' 
+                p='5px' 
                 area={'greeting'} 
                 w='100%'
             >
@@ -29,79 +33,228 @@ export default function Intro() {
                     direction='column'
                     justify='space-around'
                     align='center'
-                    border='solid red'
+                    // border='solid red'
                     w='100%'
                 >
+                    <Heading 
+                        p='5px' 
+                        size='2xl' 
+                        alignSelf='start' 
+                        noOfLines={1} 
+                        color='brand.100'
+                    >
+                        Howzit,
+                    </Heading>
+                    <Heading 
+                        p='5px' 
+                        size='2xl' 
+                        alignSelf='center' 
+                        noOfLines={1}
+                    >
+                        I'm Hico.
+                    </Heading>
+                <Flex 
+                    // border='solid red'
+                    width='100%'
+                    justifyContent='space-around'
+                    fontSize={{ base: '8px', md: '15px', lg: '15px' }}  
+                >
+                    <Flex flexDirection='column'>
 
-                <Heading as='h1' size='3xl' noOfLines={1}>
-                    Howzit,
-                </Heading>
-                <Text fontSize='4xl'>
-                    I'm Hico
-                </Text>
-                <Text fontSize='1xl'>
-                    Based in Cape Town.
+                        <Text 
+                            textDecorationLine='underline' 
+                            textAlign='center' 
+                            p='5px' 
+                            fontSize='2xl'
+                        >
+                            Web3 
+                        </Text>
+                            <List>
+                                <ListItem>
+                                    <ListIcon 
+                                        as={ArrowRightIcon} 
+                                        color='brand.300'
+                                    />
+                                    Developer
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon 
+                                        as={ArrowRightIcon} 
+                                        color='brand.300'
+                                    />
+                                    Partnership Manager
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon 
+                                        as={ArrowRightIcon} 
+                                        color='brand.300'
+                                    />
+                                    Mentor
+                                </ListItem>
+                            </List>
+                    </Flex>
+                    <Flex 
+                        flexDirection='column'
+                    >
+                        <Text 
+                            textDecorationLine='underline' 
+                            textAlign='center' 
+                            p='5px' 
+                            fontSize='2xl'
+                        >
+                            AEC 
+                        </Text>
+                        <List>
+                                <ListItem>
+                                    <ListIcon 
+                                        as={ArrowRightIcon} 
+                                        color='brand.300'
+                                    />
+                                    Civil Engineer
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon 
+                                        as={ArrowRightIcon} 
+                                        color='brand.300'
+                                    />
+                                    Project Manager
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon 
+                                        as={ArrowRightIcon} 
+                                        color='brand.300'
+                                    />
+                                    Quality Manager
+                                </ListItem>
+                            </List>
+                    </Flex>
+                </Flex>
+                <Text 
+                    p='5px' 
+                    alignSelf={{base: 'end', lg: 'end'}}
+                    fontSize={{base: '8px', md: '13px'}}
+                >
+                    Based in Cape Town, South Africa.
                 </Text>
                 </Flex>
 
-            <Hide below='md'>
+            {/* <Hide below='md'>
 
                 <Center 
-                    w='100%'
+                    // w='100%'
+                    // h='100%'
+                    border='solid red'
+                    
                 >
                     <Image 
-                        src='https://via.placeholder.com/250'
+                        // src='./Hero.jpeg'
+                        // boxSize='200px'
+                        // objectFit='cover'
+                        // border='solid red'
                         borderRadius='50px'
                         alt='Profile Picture'
-                        fallbackSrc='https://via.placeholder.com/150'
+                        fallbackSrc='https://via.placeholder.com/200'
+                        
                     />
                 </Center>
 
-                </Hide>
+                </Hide> */}
             </GridItem>
 
             <GridItem  
-                border='solid blue'
-                
+                display='flex'
+                justifyContent='center'
+                flexDirection='column'
+                textAlign='center'
             >
-                    {/* <Flex 
-                        flexDirection='column' 
-                        justify='space-evenly' 
+                <Heading 
+                    padding='10px'
+                    fontSize={{base: '20px', md: '50px'}}
+                >
+                    Tech I use
+                </Heading>
+                <hr />
+                    <Flex 
+                        p='10px'
+                        // border='solid aqua'
+                        justify='space-around' 
                         align='center' 
-                        height='100%' 
-                        // flexWrap='wrap' 
-                    > */}
-                    <Heading textAlign='center' textDecoration='underline' p='10px' >Tech Stack</Heading>
-
-                    <HStack 
+                        height='100%'
+                        width='100%' 
                         flexWrap='wrap' 
-                        justify='space-evenly' 
+                        gap='5px'
+                        overflow='auto'
                     >
-
-                        <SiReact size='5em'/>
-                        <SiNodedotjs size='5em' />
-                        <SiSolidity size='5em' />
-                        <SiChakraui size='5em' />
-                        <SiVite size='5em' />
-
-                    </HStack>
-                    {/* </Flex> */}
-
+                        {/* REFACTOR TO A BOX COMPONENT */}
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/ethereum.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>Ethereum</Text>
+                    </Box>                    
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/solidity.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>Solidity</Text>
+                    </Box>
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/react.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>ReactJS</Text>
+                    </Box>
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/nextdotjs.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>NextJS</Text>
+                    </Box>
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/vite.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>Vite</Text>
+                    </Box>
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/nodedotjs.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>NodeJS</Text>
+                    </Box>
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/chakraui.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>Chakra-UI</Text>
+                    </Box>
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/javascript.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>JavaScript</Text>
+                    </Box>                    
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/html5.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>HTML5</Text>
+                    </Box>
+                    <Box display='flex' flexDirection='column' alignItems='center'>
+                        <Image src='./logos/css3.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+                        <Text>CSS</Text>
+                    </Box>
+                    </Flex>
             </GridItem>
 
             <GridItem 
-                // pl='2' 
                 p='20px'
                 bg='' 
                 area={'description'} 
                 textAlign='center' 
-                // border='solid blue'
+                borderTop='solid white'
             >
-                <Text fontSize='xl'>From Civil Engineering Construction Management</Text>
-                <Text>to</Text>
-
-                <Text fontSize='xl'>Web3 Developer / Consultant / Mentor</Text>
-
+                <Flex
+                    flexDirection='column'
+                    fontSize={{base: '15px', md: '25px', lg: '20px', xl: '30px'}}
+                    fontFamily='font1'
+                    padding='5px'
+                    height='100%'
+                    justify='space-around'
+                >
+                    <Text>
+                        Civil Engineering Construction Management educational background with over 10 years of AEC experience. 
+                    </Text>
+                    <Text>and</Text>
+                    <Text 
+                        paddingBottom='5px'
+                    >
+                        Web3 developer, partnership manager at Forward and mentor at ConsenSys and AthensLabs.</Text>
+                    {/* <hr /> */}
+                    {/* <Text paddingTop='5px' fontSize={{base: '10px', md: '20px', lg: '15px', xl: '20px'}}>Below are some of the projects I've worked on and working on</Text> */}
+                </Flex>
             </GridItem>
         </Grid>
     )
