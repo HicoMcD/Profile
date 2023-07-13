@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Ethereum",
+        "path": "./logos/ethereum.svg"
+    },
+    {
+        "name": "Solidity",
+        "path": "./logos/solidity.svg"    
+    },
+    {
+        "name": "React",
+        "path": "./logos/react.svg"    
+    },
+    {
+        "name": "Vite",
+        "path": "./logos/vite.svg"    
+    },
+    {
+        "name": "Sketchup",
+        "path": "./logos/sketchup.svg"    
+    },
+    {
+        "name": "Node",
+        "path": "./logos/nodedotjs.svg"    
+    },
+    {
+        "name": "Nextjs",
+        "path": "./logos/nextdotjs.svg"    
+    },
+    {
+        "name": "Office",
+        "path": "./logos/microsoftoffice.svg"    
+    },
+    {
+        "name": "JavaScript",
+        "path": "./logos/javascript.svg"    
+    },
+    {
+        "name": "HTML5",
+        "path": "./logos/html5.svg"    
+    },
+    {
+        "name": "Gimp",
+        "path": "./logos/gimp.svg"    
+    },
+    {
+        "name": "CSS3",
+        "path": "./logos/css3.svg"    
+    },
+    {
+        "name": "Charkra-ui",
+        "path": "./logos/chakraui.svg"    
+    },
+    {
+        "name": "Blender",
+        "path": "./logos/blender.svg"    
+    },
+    {
+        "name": "AutoDesk",
+        "path": "./logos/autodesk.svg"    
+    }
+]

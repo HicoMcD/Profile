@@ -9,11 +9,11 @@ export default function Carousel ({ slides }) {
         pos: "absolute",
         top: "50%",
         w: "auto",
-        mt: "-22px",
+        mt: "-170px",
         p: "16px",
         color: "brand.300",
         fontWeight: "bold",
-        fontSize: "18px",
+        fontSize: "30px",
         transition: "0.6s ease",
         borderRadius: "0 3px 3px 0",
         userSelect: "none",
@@ -45,7 +45,7 @@ export default function Carousel ({ slides }) {
         <Flex
           // border='solid pink'
           w="auto"
-          bg="#edf3f8"
+          bg='brand.100' //"#edf3f8"
           _dark={{ bg: "#3e3e3e" }}
           p={2}
           alignItems="center"
@@ -55,8 +55,8 @@ export default function Carousel ({ slides }) {
             // border='solid green' 
             w="full" 
             pos="relative" 
-            overflow="hidden">
-
+            overflow="hidden"
+          >
             <Flex 
                 {...carouselStyle}
                 boxSize={{ base: '100%' }}
@@ -99,33 +99,45 @@ export default function Carousel ({ slides }) {
                     textAlign="center"
                     w="full"
                     mb="0"
-                    color="blue"
+                    // color="white"
                   >
                     <a 
                       href={slide.link} 
                       target="_blank" 
                       rel="noreferrer"
                     >
-                      <Heading>
+                      <Text fontSize='lg'>
                         <Highlight 
                           query={slide.label} 
-                          styles={{bg: 'orange'}}
+                          styles={{bg: 'brand.300', color: 'brand.100', px: '1', py: '1',}}
                         >
                           {slide.label}
                         </Highlight>
-                      </Heading>
+                      </Text>
                     </a>
-                    <Heading 
+                    <Text 
                       fontSize="sm"
                     >
                       <Highlight 
                         query={slide.description} 
-                        styles={{bg: 'brand.100'}}
-                      >
+                        styles={{bg: 'brand.300', color: 'brand.100', px: '1', py: '1',}}
+                        >
                         {slide.description}
                       </Highlight>
-                    </Heading>
-                    
+                    </Text>
+                    <Text 
+                      fontSize="sm"
+                      textDecoration='Highlight'
+                    >
+                      <Highlight 
+                        query={slide.position} 
+                        styles={{bg: 'brand.300', color: 'brand.100', px: '1', py: '1',}}
+                      >
+                        {slide.position}
+                      </Highlight>
+
+                    </Text>
+
                   </Stack>
                 </Box>
               ))}

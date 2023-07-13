@@ -1,11 +1,29 @@
 import { Grid, GridItem, Image, Heading, Text, Box, Flex, List, ListItem, ListIcon } from '@chakra-ui/react';
-import { ArrowRightIcon } from '@chakra-ui/icons'
+import { ArrowRightIcon } from '@chakra-ui/icons';
+import logos from '../data/logos.json';
+import { useEffect } from 'react';
 // import WordCarousel from './WordCarousel';
 
 
 export default function Intro() {
  
     // const words = ['Mentor', 'Builder', 'Consultant', 'Learner', 'Partnership Manager'];
+
+    useEffect(() => {
+        // console.log('aweh')
+    }, [])
+
+    const logoMap = logos.map((logo, i) => {
+        // console.log(logo)
+return(
+        <Box display='flex' flexDirection='column' alignItems='center'>
+            <Image src='./logos/ethereum.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
+            <Text color='orange'>aaaaaaaaaaaaaaaaaaaaa</Text>
+        </Box>                    
+)
+    // console.log('awe')
+})    
+
 
     return (
         <Grid 
@@ -185,47 +203,14 @@ export default function Intro() {
                         gap='5px'
                         overflow='auto'
                     >
-                        {/* REFACTOR TO A BOX COMPONENT */}
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/ethereum.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>Ethereum</Text>
-                    </Box>                    
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/solidity.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>Solidity</Text>
-                    </Box>
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/react.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>ReactJS</Text>
-                    </Box>
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/nextdotjs.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>NextJS</Text>
-                    </Box>
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/vite.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>Vite</Text>
-                    </Box>
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/nodedotjs.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>NodeJS</Text>
-                    </Box>
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/chakraui.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>Chakra-UI</Text>
-                    </Box>
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/javascript.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>JavaScript</Text>
-                    </Box>                    
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/html5.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>HTML5</Text>
-                    </Box>
-                    <Box display='flex' flexDirection='column' alignItems='center'>
-                        <Image src='./logos/css3.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-                        <Text>CSS</Text>
-                    </Box>
+                    {logos.map((logo, i) => {
+                        return (
+                            <Box key={i} display='flex' flexDirection='column' alignItems='center'>
+                                <Image src={logo.path} boxSize='50px' alt={logo.name} p='1px' backgroundColor='white' />
+                                <Text>{logo.name}</Text>
+                            </Box>                         
+                        )
+                    })}
                     </Flex>
             </GridItem>
 
@@ -251,7 +236,7 @@ export default function Intro() {
                     <Text 
                         paddingBottom='5px'
                     >
-                        Web3 developer, partnership manager at Forward and mentor at ConsenSys and AthensLabs.</Text>
+                        Web3 developer, ArchiDAO Core Member, Partnership Manager at Forward and Mentor at ConsenSys and AthensLabs.</Text>
                     {/* <hr /> */}
                     {/* <Text paddingTop='5px' fontSize={{base: '10px', md: '20px', lg: '15px', xl: '20px'}}>Below are some of the projects I've worked on and working on</Text> */}
                 </Flex>

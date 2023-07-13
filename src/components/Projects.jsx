@@ -1,10 +1,8 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Flex, Heading} from '@chakra-ui/react';
 import Carousel from './Carousel';
-import ProjectsJSON from './Projects.json';
+import ProjectsJSON from '../data/Projects.json';
 
 export default function Projects () {
-    // console.log(ProjectsJSON[0].web3Projects)
-    //"https://via.placeholder.com/150"
 
     return (
         <Flex             
@@ -16,8 +14,12 @@ export default function Projects () {
             color='white'
             marginBottom='10px'
             flexDirection='column'
+            fontFamily='font1'
         >
-            <Heading alignSelf='center'>
+            <Heading 
+                alignSelf='center'
+                padding='10px'
+            >
                 Projects
             </Heading>
             <hr />
@@ -36,11 +38,32 @@ export default function Projects () {
                     width='1000px'
                     isFitted variant='enclosed'
                     defaultIndex={0}
+                    color='brand.100'
+                    // colorScheme='purple'
                 >
-                    <TabList justifyContent='space-evenly' >
-                        <Tab fontSize='sm'>Web3</Tab>
-                        <Tab fontSize='sm'>Construction</Tab>
-                        <Tab fontSize='sm'>React</Tab>
+                    <TabList 
+                        justifyContent='space-evenly'
+                    >
+                        <Tab 
+                            fontSize='sm'
+                            _selected={{ color: 'brand.100', bg: 'brand.300' }}
+                        >
+                            Web3
+                        </Tab>
+                        <Tab 
+                            fontSize='sm'
+                            _selected={{ color: 'brand.100', bg: 'brand.300' }}
+
+                        >
+                            Construction
+                        </Tab>
+                        {/* <Tab 
+                            fontSize='sm'
+                            _selected={{ color: 'brand.100', bg: 'brand.300' }}
+
+                        >
+                            React & JS
+                        </Tab> */}
                     </TabList>    
 
                         <TabPanels >
@@ -60,6 +83,7 @@ export default function Projects () {
                                 />
                             </TabPanel>
                         </TabPanels>    
+                        
                 </Tabs>
             </Flex>
         </Flex>
