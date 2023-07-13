@@ -1,29 +1,15 @@
 import { Grid, GridItem, Image, Heading, Text, Box, Flex, List, ListItem, ListIcon } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons';
 import logos from '../data/logos.json';
-import { useEffect } from 'react';
 // import WordCarousel from './WordCarousel';
-
 
 export default function Intro() {
  
     // const words = ['Mentor', 'Builder', 'Consultant', 'Learner', 'Partnership Manager'];
+    const Web3Titles = [ 'Developer', 'Partnership Manager', 'Mentor' ];
+    const AECTitles = [ 'Civil Engineer', 'Project Manager', 'Quality Manager' ];
 
-    useEffect(() => {
-        // console.log('aweh')
-    }, [])
-
-    const logoMap = logos.map((logo, i) => {
-        // console.log(logo)
-return(
-        <Box display='flex' flexDirection='column' alignItems='center'>
-            <Image src='./logos/ethereum.svg' boxSize='50px' alt='more text' p='1px' backgroundColor='white' />
-            <Text color='orange'>aaaaaaaaaaaaaaaaaaaaa</Text>
-        </Box>                    
-)
-    // console.log('awe')
-})    
-
+    const font = 'font8';
 
     return (
         <Grid 
@@ -38,7 +24,7 @@ return(
             width='100%'
             backgroundColor='black'
             color='white'
-            fontFamily={'font4'}
+            fontFamily={font}
         >
             <GridItem 
                 borderRight='solid white' 
@@ -59,7 +45,8 @@ return(
                         size='2xl' 
                         alignSelf='start' 
                         noOfLines={1} 
-                        color='brand.100'
+                        // color='brand.100'
+                        fontFamily={font}
                     >
                         Howzit,
                     </Heading>
@@ -68,6 +55,7 @@ return(
                         size='2xl' 
                         alignSelf='center' 
                         noOfLines={1}
+                        fontFamily={font}
                     >
                         I'm Hico.
                     </Heading>
@@ -80,71 +68,53 @@ return(
                     <Flex flexDirection='column'>
 
                         <Text 
-                            textDecorationLine='underline' 
                             textAlign='center' 
                             p='5px' 
                             fontSize='2xl'
                         >
                             Web3 
                         </Text>
+
                             <List>
-                                <ListItem>
-                                    <ListIcon 
-                                        as={ArrowRightIcon} 
-                                        color='brand.300'
-                                    />
-                                    Developer
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon 
-                                        as={ArrowRightIcon} 
-                                        color='brand.300'
-                                    />
-                                    Partnership Manager
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon 
-                                        as={ArrowRightIcon} 
-                                        color='brand.300'
-                                    />
-                                    Mentor
-                                </ListItem>
+                                {Web3Titles.map((title, i) => {
+                                    return (
+                                        <ListItem key={i}>
+                                        <ListIcon 
+                                            as={ArrowRightIcon} 
+                                            color='brand.300'
+                                        />
+                                        {title}
+                                        </ListItem>
+                                    )
+                                })}
                             </List>
+
                     </Flex>
                     <Flex 
                         flexDirection='column'
                     >
                         <Text 
-                            textDecorationLine='underline' 
                             textAlign='center' 
                             p='5px' 
                             fontSize='2xl'
                         >
                             AEC 
                         </Text>
+                       
                         <List>
-                                <ListItem>
+                            {AECTitles.map((title, i) => {
+                                return (
+                                    <ListItem key={i}>
                                     <ListIcon 
                                         as={ArrowRightIcon} 
                                         color='brand.300'
                                     />
-                                    Civil Engineer
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon 
-                                        as={ArrowRightIcon} 
-                                        color='brand.300'
-                                    />
-                                    Project Manager
-                                </ListItem>
-                                <ListItem>
-                                    <ListIcon 
-                                        as={ArrowRightIcon} 
-                                        color='brand.300'
-                                    />
-                                    Quality Manager
-                                </ListItem>
-                            </List>
+                                    {title}
+                                    </ListItem>
+                                )
+                                })}
+                            </List>       
+
                     </Flex>
                 </Flex>
                 <Text 
@@ -156,27 +126,6 @@ return(
                 </Text>
                 </Flex>
 
-            {/* <Hide below='md'>
-
-                <Center 
-                    // w='100%'
-                    // h='100%'
-                    border='solid red'
-                    
-                >
-                    <Image 
-                        // src='./Hero.jpeg'
-                        // boxSize='200px'
-                        // objectFit='cover'
-                        // border='solid red'
-                        borderRadius='50px'
-                        alt='Profile Picture'
-                        fallbackSrc='https://via.placeholder.com/200'
-                        
-                    />
-                </Center>
-
-                </Hide> */}
             </GridItem>
 
             <GridItem  
@@ -224,7 +173,6 @@ return(
                 <Flex
                     flexDirection='column'
                     fontSize={{base: '15px', md: '25px', lg: '20px', xl: '30px'}}
-                    fontFamily='font1'
                     padding='5px'
                     height='100%'
                     justify='space-around'
@@ -236,9 +184,7 @@ return(
                     <Text 
                         paddingBottom='5px'
                     >
-                        Web3 developer, ArchiDAO Core Member, Partnership Manager at Forward and Mentor at ConsenSys and AthensLabs.</Text>
-                    {/* <hr /> */}
-                    {/* <Text paddingTop='5px' fontSize={{base: '10px', md: '20px', lg: '15px', xl: '20px'}}>Below are some of the projects I've worked on and working on</Text> */}
+                        Web3 developer, ArchiDAO Core Member, Partnership Manager at Forward and Mentor and AthensLabs.</Text>
                 </Flex>
             </GridItem>
         </Grid>

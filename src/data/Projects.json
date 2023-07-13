@@ -36,14 +36,14 @@
         "constructionProjects" : 
         [
             {
-                "img" : "./ws500.png",
+                "img" : "./Windshell.png",
                 "label": "Windshell",
                 "description": "Bangkok, Thailand",
                 "position": "Quality Manager",
                 "link": "https://windshell.com/"                
             },
             {
-                "img": "./GoudaWindFarm.jpg",
+                "img": "./GoudaWindFarm.png",
                 "label": "Gouda Wind Farm",
                 "description": "Western Cape, South Africa",
                 "position": "Quality Engineer",
@@ -57,21 +57,21 @@
                 "link": ""
             },
             {
-                "img" : "./EmbassyOfTheNetherlands.jpg",
+                "img" : "./EmbassyOfTheNetherlands.png",
                 "label": "Embassy of the Netherlands",
                 "description": "Bangkok, Thailand",
                 "position": "Operation Project Manager",
                 "link": ""
             },
             {
-                "img": "./PicassoVillasPhuketO.png",
+                "img": "./PicassoVillasPhuket.png",
                 "label": "Picasso Villas",
                 "description": "Phuket, Thailand",
                 "position": "Client Liaison",
                 "link" : ""
             },
             {
-                "img" : "./KohKoonO.png",
+                "img" : "./KohKoon.png",
                 "label": "Koh Koon",
                 "description": "Koh Samui, Thailand",
                 "position": "Client Liaison",
@@ -85,7 +85,7 @@
                 "link": ""
             },
             {
-                "img" : "./BaanYamu.jpg",
+                "img" : "./BaanYamu.png",
                 "label": "Baan Yamu",
                 "description": "Phuket, Thailand",
                 "position": "Quality Manager",
@@ -97,7 +97,8 @@
         "reactJsProjects":
         [
             {
-                "img" : "https://via.placeholder.com/150",
+                "img" : "https://via.placeholder.com/150"
+                ,
                 "label": "Forkify",
                 "description": "Built as a project for Udemy JavaScript course",
                 "position": "Developer",

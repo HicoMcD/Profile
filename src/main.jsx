@@ -21,6 +21,13 @@ const theme = extendTheme({
   },
   fonts: {
     font1: `'Open Sans', sans-serif`,
+    font2: `'Arial', sans-serif`,
+    font3: `'Verdana', sans-serif`,  
+    font4: `'Brush Script MT', cursive`,  
+    font5: `'Courier New', monospace`, 
+    font6: `'Garamond', serif`,
+    font7: `'Georgia', serif`,
+    font8: `'Tahoma', sans-serif`, 
   },
 })
 

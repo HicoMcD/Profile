@@ -36,24 +36,25 @@ export default function Projects () {
                     marginTop='20px' 
                     // border='solid orange'
                     width='1000px'
-                    isFitted variant='enclosed'
+                    isFitted 
+                    variant='soft-rounded'
                     defaultIndex={0}
-                    color='brand.100'
-                    // colorScheme='purple'
+                    // color='brand.100'
                 >
                     <TabList 
                         justifyContent='space-evenly'
                     >
                         <Tab 
-                            fontSize='sm'
+                            marginLeft='10px'
+                            fontSize='lg'
                             _selected={{ color: 'brand.100', bg: 'brand.300' }}
                         >
                             Web3
                         </Tab>
                         <Tab 
-                            fontSize='sm'
+                            marginRight='10px'
+                            fontSize='lg'
                             _selected={{ color: 'brand.100', bg: 'brand.300' }}
-
                         >
                             Construction
                         </Tab>
