@@ -2,9 +2,10 @@ import { Flex, Text, Image, Link } from '@chakra-ui/react';
 
 export default function Footer () {
 
+    const font = 'font8';
+
     return (
         <Flex 
-            // border='solid aqua'
             flexDirection='column'
             padding='10px'
             align='center'
@@ -12,16 +13,15 @@ export default function Footer () {
             height='70px'  
             backgroundColor='black'
             color='white'
-            fontFamily='font1'
+            fontFamily={font}
         >
-
             <Text>
                 &#127959;
                 &Beta;uilt by Hico 2023
                 &#127959;
             </Text> 
             <Link
-                href='https://www.github.com/' 
+                href='https://github.com/HicoMcD' 
                 target='_blank' rel="noreferrer"
             > 
                 <Image 
@@ -33,7 +33,6 @@ export default function Footer () {
                     borderRadius='50%' 
                 />
             </Link>
-
         </Flex>
     )
 }

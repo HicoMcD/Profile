@@ -3,9 +3,11 @@ import Menu from './Menu';
 
 export default function Navbar () {
 
+    const font = 'font8';
+
     return (
         <Flex
-            background='black'
+            background='brand.1000'
             color='white'
             justify='space-between'
             height='80px'
@@ -13,18 +15,23 @@ export default function Navbar () {
             zIndex='1'
             top='0'
             padding='5px'
-            boxShadow='0 0 5px 5px #453885' //brand.300
+            boxShadow='0 0 5px 5px #453885'
+            fontFamily='font8'
         >
             <Box 
-                boxSize='65px' 
+                boxSize='60px' 
+                margin='2px'
             >
-
-                <Image 
-                    src='./profilePic.jpg' 
-                    alt='Hico' 
-                    borderRadius='20px' 
-                    fallbackSrc='https://via.placeholder.com/150'
-                />
+                <Link
+                    href=''
+                >
+                    <Image 
+                        src='./profilePic.jpg' 
+                        alt='Hico profile picture' 
+                        borderRadius='20px' 
+                        fallbackSrc='https://via.placeholder.com/150'
+                    />
+                </Link>
             </Box>
             <Flex 
                 border='solid 2px'
@@ -39,10 +46,12 @@ export default function Navbar () {
                     <Center 
                         pl='50px' 
                         textAlign='center' 
-                        // border='solid yellow'
                         align='center'
                     >
-                        <Heading size='md'>
+                        <Heading 
+                            size='md'
+                            fontFamily={font}
+                        >
                             Connect with me
                         </Heading>
                     </Center>
@@ -52,16 +61,15 @@ export default function Navbar () {
                     width='100%'
                 >
                     <Box 
-                        // border='solid red' 
                         boxSize='50px'
                     >
                         <Link 
-                            href='https://www.telegram.com/' 
+                            href='https://t.me/HicoMcD' 
                             target='_blank' rel="noreferrer" 
                         >
                             <Image 
                                 src='./logos/telegram.svg' 
-                                alt='more text' 
+                                alt='Telegram logo' 
                                 p='1px' 
                                 backgroundColor='white' 
                                 borderRadius='50%' 
@@ -69,16 +77,16 @@ export default function Navbar () {
                         </Link> 
                     </Box>
                     <Box 
-                        // border='solid red' 
                         boxSize='50px'
                     >
                         <Link 
-                            href='https://www.linkedin.com/' 
+                            href='https://www.linkedin.com/in/hico-mc-donald-97b97864/' 
                             target='_blank' 
-                            rel="noreferrer">
+                            rel="noreferrer"
+                        >
                             <Image 
                                 src='./logos/linkedin.svg' 
-                                alt='more text' 
+                                alt='LinkedIn logo' 
                                 borderRadius='50%' 
                                 p='1px' 
                                 backgroundColor='white' 
@@ -89,12 +97,13 @@ export default function Navbar () {
                         boxSize='50px'
                     >
                         <Link 
-                            href='https://www.github.com/' 
+                            href='https://github.com/HicoMcD' 
                             target='_blank' 
                             rel="noreferrer" >
                             <Image 
                                 src='./logos/github.svg' 
-                                alt='more text' p='1px' 
+                                alt='Github logo' 
+                                p='1px' 
                                 backgroundColor='white' 
                                 borderRadius='50%' 
                             />

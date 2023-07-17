@@ -7,21 +7,21 @@
                 "label": "ArchiDAO NFT",
                 "description": "On-chain NFT built for ArchiDAO",
                 "position": "Developer",
-                "link" : ""
+                "link" : "https://www.archidao.io/Dashboard"
             },
             {
                 "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/Escrow.jpg",
                 "label": "Escrow dApp",
                 "description": "Built as a project for Alchemy University",
                 "position": "Developer",
-                "link": ""
+                "link": "https://escrow-hardhat-au.vercel.app/"
             },
             {
                 "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/CryptoGiftsToMinors.jpg",
                 "label": "Crypto Gifts To Minors",
                 "description": "ConsenSys Bootcamp Final Project",
                 "position": "Developer",
-                "link" : ""
+                "link" : "https://github.com/HicoMcD/Crypto-Gifts-To-Minors-Wallet-Dapp"
             },
             {
                 "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/UnderConstruction.png",
@@ -30,10 +30,8 @@
                 "position": "Developer",
                 "link" : ""            
             }   
-        ]
-    },
-    {
-        "constructionProjects" : 
+        ],
+        "aecProjects" : 
         [
             {
                 "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/Windshell.jpg",
@@ -54,55 +52,42 @@
                 "label": "Conrad Hotel",
                 "description": "Bangkok, Thailand",
                 "position": "Project Manager",
-                "link": ""
+                "link": "https://www.hilton.com/en/hotels/bkkcici-conrad-bangkok/"
             },
             {
                 "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/EmbassyOfTheNetherlands.jpg",
                 "label": "Embassy of the Netherlands",
                 "description": "Bangkok, Thailand",
                 "position": "Operation Project Manager",
-                "link": ""
+                "link": "https://www.google.com/maps/place/Embassy+of+the+Netherlands/@13.7396546,100.544947,190m/data=!3m1!1e3!4m14!1m7!3m6!1s0x30e29ed95fdefd75:0xb394ce5b84db8ba0!2sEmbassy+of+the+Netherlands!8m2!3d13.7396587!4d100.5449654!16s%2Fg%2F11dz566xv3!3m5!1s0x30e29ed95fdefd75:0xb394ce5b84db8ba0!8m2!3d13.7396587!4d100.5449654!16s%2Fg%2F11dz566xv3!5m1!1e4?entry=ttu"
             },
             {
                 "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/PicassoVillasPhuket.jpg",
                 "label": "Picasso Villas",
                 "description": "Phuket, Thailand",
                 "position": "Quality Control",
-                "link" : ""
+                "link" : "https://www.google.com/maps/place/Picasso+Villas/@8.0018921,98.3188094,87m/data=!3m1!1e3!4m14!1m7!3m6!1s0x30503779e89c579d:0xc5d46632b18f6708!2sPicasso+Villas!8m2!3d8.0019289!4d98.3190869!16s%2Fg%2F11d_wtl336!3m5!1s0x30503779e89c579d:0xc5d46632b18f6708!8m2!3d8.0019289!4d98.3190869!16s%2Fg%2F11d_wtl336!5m1!1e4?entry=ttu"
             },
             {
                 "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/KohKoon.jpg",
                 "label": "Koh Koon",
                 "description": "Koh Samui, Thailand",
                 "position": "Quality Control",
-                "link": ""
+                "link": "https://www.google.com/maps/@9.4914297,100.055886,128m/data=!3m1!1e3?entry=ttu"
             },
             {
                 "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/DiamondCondo.jpg",
                 "label": "Diamond Condominium",
                 "description": "Phuket, Thailand",
                 "position": "Project Coordinator and Quality Control",
-                "link": ""
+                "link": "https://www.diamondcondominium.com/"
             },
             {
                 "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/BaanYamu.jpg",
                 "label": "Baan Yamu",
                 "description": "Phuket, Thailand",
                 "position": "Quality Control",
-                "link": ""
-            }
-        ]
-    },
-    {
-        "reactJsProjects":
-        [
-            {
-                "img" : "https://via.placeholder.com/150"
-                ,
-                "label": "Forkify",
-                "description": "Built as a project for Udemy JavaScript course",
-                "position": "Developer",
-                "link": ""                
+                "link": "https://baanyamu.com/"
             }
         ]
     }

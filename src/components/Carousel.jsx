@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Box, Flex, HStack, Heading, Highlight, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Highlight, Image, Link, Stack, Text } from "@chakra-ui/react";
 
 export default function Carousel ({ slides }) {
-  // console.log(slides)
 
     const arrowStyles = {
         cursor: "pointer",
@@ -19,7 +18,7 @@ export default function Carousel ({ slides }) {
         userSelect: "none",
         _hover: {
           opacity: 0.8,
-          bg: "black",
+          bg: "brand.1000",
         },
       }
     
@@ -30,12 +29,15 @@ export default function Carousel ({ slides }) {
       const prevSlide = () => {
         setCurrentSlide((s) => (s === 0 ? slidesCount - 1 : s - 1));
       };
+
       const nextSlide = () => {
         setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
       };
+
       const setSlide = (slide) => {
         setCurrentSlide(slide);
       };
+
       const carouselStyle = {
         transition: "all .5s",
         ml: `-${currentSlide * 100}%`,
@@ -43,16 +45,13 @@ export default function Carousel ({ slides }) {
     
       return (
         <Flex
-          // border='solid pink'
           w="auto"
-          bg='brand.100' //"#edf3f8"
-          _dark={{ bg: "#3e3e3e" }}
+          bg='brand.100'
           p={2}
           alignItems="center"
           justifyContent="center"
         >
           <Flex 
-            // border='solid green' 
             w="full" 
             pos="relative" 
             overflow="hidden"
@@ -64,14 +63,13 @@ export default function Carousel ({ slides }) {
               {slides.map((slide, sid) => (
                 <Box 
                   key={`slide-${sid}`}
-                  // border='solid red' 
                   boxSize="full" 
                   shadow="md" 
                   flex="none" 
                 >
                   <Text
                     color="white"
-                    bg='black'
+                    bg='brand.1000'
                     fontSize="xs"
                     p="5px"
                     pos="absolute"
@@ -79,19 +77,17 @@ export default function Carousel ({ slides }) {
                   >
                     {sid + 1} / {slidesCount}
                   </Text>
-                  {/* <a href={slide.link} target="_blank" rel="noreferrer"> */}
+                  <Link href={slide.img} target="_blank" rel="noreferrer">
                   <Image
                     src={slide.img}
                     alt="carousel image"
                     boxSize="full"
                     p='10px'
-
                     objectFit='scale-down'
                     backgroundColor='brand.200'
                     height='400px'                    
-                    // onClick={slide.click}
                   />
-                  {/* </a> */}
+                  </Link>
                   <Stack
                     p="8px 12px"
                     pos="absolute"
@@ -99,9 +95,8 @@ export default function Carousel ({ slides }) {
                     textAlign="center"
                     w="full"
                     mb="0"
-                    // color="white"
                   >
-                    <a 
+                    <Link 
                       href={slide.link} 
                       target="_blank" 
                       rel="noreferrer"
@@ -114,7 +109,7 @@ export default function Carousel ({ slides }) {
                           {slide.label}
                         </Highlight>
                       </Text>
-                    </a>
+                    </Link>
                     <Text 
                       fontSize="sm"
                     >
@@ -135,9 +130,7 @@ export default function Carousel ({ slides }) {
                       >
                         {slide.position}
                       </Highlight>
-
                     </Text>
-
                   </Stack>
                 </Box>
               ))}
@@ -170,11 +163,11 @@ export default function Carousel ({ slides }) {
                   cursor="pointer"
                   boxSize={["7px", null, "15px"]}
                   m="0 2px"
-                  bg={currentSlide === slide ? "blackAlpha.800" : "blackAlpha.500"}
+                  bg={currentSlide === slide ? "brand.300" : "brand.100"}
                   rounded="50%"
                   display="inline-block"
                   transition="background-color 0.6s ease"
-                  _hover={{ bg: "blackAlpha.800" }}
+                  _hover={{ bg: "brand.1000" }}
                   onClick={() => setSlide(slide)}
                 ></Box>
               ))}

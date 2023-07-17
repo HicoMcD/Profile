@@ -17,7 +17,6 @@ export default function Intro() {
                             "description description"`}
             gridTemplateRows={'50% 50%'}
             gridTemplateColumns={'60% 40%'}
-            // border='solid blue' 
             borderRadius='10px'
             margin='10px' 
             height='500px'
@@ -37,7 +36,6 @@ export default function Intro() {
                     direction='column'
                     justify='space-around'
                     align='center'
-                    // border='solid red'
                     w='100%'
                 >
                     <Heading 
@@ -45,7 +43,6 @@ export default function Intro() {
                         size='2xl' 
                         alignSelf='start' 
                         noOfLines={1} 
-                        // color='brand.100'
                         fontFamily={font}
                     >
                         Howzit,
@@ -60,13 +57,11 @@ export default function Intro() {
                         I'm Hico.
                     </Heading>
                 <Flex 
-                    // border='solid red'
                     width='100%'
                     justifyContent='space-around'
                     fontSize={{ base: '8px', md: '15px', lg: '15px' }}  
                 >
                     <Flex flexDirection='column'>
-
                         <Text 
                             textAlign='center' 
                             p='5px' 
@@ -88,7 +83,6 @@ export default function Intro() {
                                     )
                                 })}
                             </List>
-
                     </Flex>
                     <Flex 
                         flexDirection='column'
@@ -100,7 +94,6 @@ export default function Intro() {
                         >
                             AEC 
                         </Text>
-                       
                         <List>
                             {AECTitles.map((title, i) => {
                                 return (
@@ -114,7 +107,6 @@ export default function Intro() {
                                 )
                                 })}
                             </List>       
-
                     </Flex>
                 </Flex>
                 <Text 
@@ -125,9 +117,7 @@ export default function Intro() {
                     Based in Cape Town, South Africa.
                 </Text>
                 </Flex>
-
             </GridItem>
-
             <GridItem  
                 display='flex'
                 justifyContent='center'
@@ -162,7 +152,6 @@ export default function Intro() {
                     })}
                     </Flex>
             </GridItem>
-
             <GridItem 
                 p='20px'
                 bg='' 
@@ -184,7 +173,7 @@ export default function Intro() {
                     <Text 
                         paddingBottom='5px'
                     >
-                        Web3 developer, ArchiDAO Core Member, Partnership Manager at Forward and Mentor and AthensLabs.</Text>
+                        Web3 developer, ArchiDAO Core Member, Partnership Manager at Forward and Mentor at AthensLabs.</Text>
                 </Flex>
             </GridItem>
         </Grid>
