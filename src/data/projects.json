@@ -1,0 +1,109 @@
+[
+    {
+        "web3Projects" : 
+        [
+            {
+                "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/ArchiDAO.jpg",
+                "label": "ArchiDAO NFT",
+                "description": "On-chain NFT built for ArchiDAO",
+                "position": "Developer",
+                "link" : ""
+            },
+            {
+                "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/Escrow.jpg",
+                "label": "Escrow dApp",
+                "description": "Built as a project for Alchemy University",
+                "position": "Developer",
+                "link": ""
+            },
+            {
+                "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/CryptoGiftsToMinors.jpg",
+                "label": "Crypto Gifts To Minors",
+                "description": "ConsenSys Bootcamp Final Project",
+                "position": "Developer",
+                "link" : ""
+            },
+            {
+                "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/UnderConstruction.png",
+                "label": "Token and NFT Indexer",
+                "description": "Under Construction",
+                "position": "Developer",
+                "link" : ""            
+            }   
+        ]
+    },
+    {
+        "constructionProjects" : 
+        [
+            {
+                "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/Windshell.jpg",
+                "label": "Windshell",
+                "description": "Bangkok, Thailand",
+                "position": "Quality Manager",
+                "link": "https://windshell.com/"                
+            },
+            {
+                "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/GoudaWindFarm.jpg",
+                "label": "Gouda Wind Farm",
+                "description": "Western Cape, South Africa",
+                "position": "Quality Engineer",
+                "link" : "https://www.acciona.com/projects/gouda-wind-farm/"
+            },
+            {
+                "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/ConradHotel.jpg",
+                "label": "Conrad Hotel",
+                "description": "Bangkok, Thailand",
+                "position": "Project Manager",
+                "link": ""
+            },
+            {
+                "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/EmbassyOfTheNetherlands.jpg",
+                "label": "Embassy of the Netherlands",
+                "description": "Bangkok, Thailand",
+                "position": "Operation Project Manager",
+                "link": ""
+            },
+            {
+                "img": "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/PicassoVillasPhuket.jpg",
+                "label": "Picasso Villas",
+                "description": "Phuket, Thailand",
+                "position": "Quality Control",
+                "link" : ""
+            },
+            {
+                "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/KohKoon.jpg",
+                "label": "Koh Koon",
+                "description": "Koh Samui, Thailand",
+                "position": "Quality Control",
+                "link": ""
+            },
+            {
+                "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/DiamondCondo.jpg",
+                "label": "Diamond Condominium",
+                "description": "Phuket, Thailand",
+                "position": "Project Coordinator and Quality Control",
+                "link": ""
+            },
+            {
+                "img" : "https://red-outer-constrictor-323.mypinata.cloud/ipfs/QmRXwrFyTn7Tk1Lqf6asytmrdzdkpYb6s2uY7qu4K8Xz5i/BaanYamu.jpg",
+                "label": "Baan Yamu",
+                "description": "Phuket, Thailand",
+                "position": "Quality Control",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "reactJsProjects":
+        [
+            {
+                "img" : "https://via.placeholder.com/150"
+                ,
+                "label": "Forkify",
+                "description": "Built as a project for Udemy JavaScript course",
+                "position": "Developer",
+                "link": ""                
+            }
+        ]
+    }
+]

@@ -18,8 +18,9 @@ export default function Navbar () {
             <Box 
                 boxSize='65px' 
             >
+
                 <Image 
-                    src='./ppic.jpg' 
+                    src='./profilePic.jpg' 
                     alt='Hico' 
                     borderRadius='20px' 
                     fallbackSrc='https://via.placeholder.com/150'

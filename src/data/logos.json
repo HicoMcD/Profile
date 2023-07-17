@@ -58,5 +58,17 @@
     {
         "name": "AutoDesk",
         "path": "./logos/autodesk.svg"    
+    },
+    {
+        "name": "Github",
+        "path": "./logos/github.svg"    
+    },
+    {
+        "name": "Telegram",
+        "path": "./logos/telegram.svg"    
+    },
+    {
+        "name": "LinkedIn",
+        "path": "./logos/linkedin.svg"    
     }
 ]

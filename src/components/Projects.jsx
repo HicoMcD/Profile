@@ -1,6 +1,6 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Flex, Heading} from '@chakra-ui/react';
 import Carousel from './Carousel';
-import ProjectsJSON from '../data/Projects.json';
+import ProjectsJSON from '../data/projects.json';
 
 export default function Projects () {
 
@@ -20,7 +20,7 @@ export default function Projects () {
                 alignSelf='center'
                 padding='10px'
             >
-                Projects
+                Featured Projects
             </Heading>
             <hr />
             <Flex 
@@ -56,7 +56,7 @@ export default function Projects () {
                             fontSize='lg'
                             _selected={{ color: 'brand.100', bg: 'brand.300' }}
                         >
-                            Construction
+                            AEC Industry
                         </Tab>
                         {/* <Tab 
                             fontSize='sm'
