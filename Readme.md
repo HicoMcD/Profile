@@ -7,7 +7,7 @@ I built this webpage to showcase some of the projects I am currently working on 
 Project's showcased range from the Architectural-Engineering-Construction (AEC) industry to the Web3 space utilising many different tools between both the industries to help complete these projects.
 
 :building_construction: :construction:
-This webpage is a work in progress and alwasy under construction that I aim to continuely update as my career progresses.
+This webpage is a work in progress and always under construction which I aim to continuously update as my career progresses.
 
 ## Tools and Technology:
 
