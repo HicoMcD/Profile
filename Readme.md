@@ -27,8 +27,8 @@ This webpage is a work in progress and always under construction which I aim to 
   
 ### Deployment
 
-- Fleek
-- Github
+- Github 
+- GH Pages
 
 
 
