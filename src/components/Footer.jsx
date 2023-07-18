@@ -21,7 +21,7 @@ export default function Footer () {
                 &#127959;
             </Text> 
             <Link
-                href='https://github.com/HicoMcD' 
+                href='https://github.com/HicoMcD/Profile' 
                 target='_blank' rel="noreferrer"
             > 
                 <Image 
