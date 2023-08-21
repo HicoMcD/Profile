@@ -175,4 +175,4 @@ export default function Carousel ({ slides }) {
           </Flex>
         </Flex>
       );
-    }
+}
