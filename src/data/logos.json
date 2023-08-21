@@ -12,24 +12,16 @@
         "path": "./logos/react.svg"    
     },
     {
-        "name": "Vite",
-        "path": "./logos/vite.svg"    
-    },
-    {
-        "name": "Sketchup",
-        "path": "./logos/sketchup.svg"    
-    },
-    {
         "name": "Node",
         "path": "./logos/nodedotjs.svg"    
     },
     {
-        "name": "Nextjs",
-        "path": "./logos/nextdotjs.svg"    
+        "name": "Vite",
+        "path": "./logos/vite.svg"    
     },
     {
-        "name": "Office",
-        "path": "./logos/microsoftoffice.svg"    
+        "name": "Nextjs",
+        "path": "./logos/nextdotjs.svg"    
     },
     {
         "name": "JavaScript",
@@ -40,10 +32,6 @@
         "path": "./logos/html5.svg"    
     },
     {
-        "name": "Gimp",
-        "path": "./logos/gimp.svg"    
-    },
-    {
         "name": "CSS3",
         "path": "./logos/css3.svg"    
     },
@@ -52,8 +40,24 @@
         "path": "./logos/chakraui.svg"    
     },
     {
+        "name": "Figma",
+        "path": "./logos/figma.svg"    
+    },
+    {
+        "name": "Gimp",
+        "path": "./logos/gimp.svg"    
+    },
+    {
         "name": "Blender",
         "path": "./logos/blender.svg"    
+    },
+    {
+        "name": "Office",
+        "path": "./logos/microsoftoffice.svg"    
+    },
+    {
+        "name": "Sketchup",
+        "path": "./logos/sketchup.svg"    
     },
     {
         "name": "AutoDesk",
@@ -62,13 +66,5 @@
     {
         "name": "Github",
         "path": "./logos/github.svg"    
-    },
-    {
-        "name": "Telegram",
-        "path": "./logos/telegram.svg"    
-    },
-    {
-        "name": "LinkedIn",
-        "path": "./logos/linkedin.svg"    
     }
 ]

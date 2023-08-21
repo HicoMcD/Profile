@@ -133,7 +133,6 @@ export default function Intro() {
                 <hr />
                     <Flex 
                         p='10px'
-                        // border='solid aqua'
                         justify='space-around' 
                         align='center' 
                         height='100%'
@@ -144,8 +143,20 @@ export default function Intro() {
                     >
                     {logos.map((logo, i) => {
                         return (
-                            <Box key={i} display='flex' flexDirection='column' alignItems='center'>
-                                <Image src={logo.path} boxSize='50px' alt={logo.name} p='1px' backgroundColor='white' />
+                            <Box 
+                                key={i} 
+                                display='flex' 
+                                flexDirection='column' 
+                                alignItems='center'
+                                width='100px'
+                            >
+                                <Image 
+                                    src={logo.path} 
+                                    boxSize='50px' 
+                                    alt={logo.name} 
+                                    p='1px' 
+                                    backgroundColor='white' 
+                                />
                                 <Text>{logo.name}</Text>
                             </Box>                         
                         )
@@ -167,9 +178,9 @@ export default function Intro() {
                     justify='space-around'
                 >
                     <Text>
-                        Civil Engineering Construction Management educational background with over 10 years of AEC experience. 
+                        Civil Engineering Construction Management educational background with over 10 years of Architectural, Engineering and Construction experience. 
                     </Text>
-                    <Text>and</Text>
+                    <Text>&</Text>
                     <Text 
                         paddingBottom='5px'
                     >
