@@ -89,9 +89,9 @@ export default function Carousel ({ slides }) {
                   />
                   </Link>
                   <Stack
-                    p="8px 12px"
+                    p="6px 12px"
                     pos="absolute"
-                    bottom="40px"
+                    bottom="25px"
                     textAlign="center"
                     w="full"
                     mb="0"
@@ -103,10 +103,10 @@ export default function Carousel ({ slides }) {
                     >
                       <Text fontSize='lg'>
                         <Highlight 
-                          query={slide.label} 
+                          query={slide.project} 
                           styles={{bg: 'brand.300', color: 'brand.100', px: '1', py: '1',}}
                         >
-                          {slide.label}
+                          {slide.project}
                         </Highlight>
                       </Text>
                     </Link>

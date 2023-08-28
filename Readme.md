@@ -23,12 +23,13 @@ This webpage is a work in progress and always under construction which I aim to 
 
 ### Image Storage
 
-- Pinata (IPFS)
+- IPFS
   
 ### Deployment
 
 - Github 
-- GH Pages
+- GH Pages 
+  - npm run deploy
 
 
 
