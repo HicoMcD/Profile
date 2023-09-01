@@ -66,7 +66,7 @@ export default function Menu () {
                                       target='_blank' 
                                       rel="noreferrer" 
                                     >
-                                      {web3.label}                                      
+                                      {web3.project}                                      
                                     </Link>
                                 </ListItem>
                               )
@@ -97,7 +97,7 @@ export default function Menu () {
                                         target='_blank' 
                                         rel="noreferrer" 
                                       >
-                                        {web3.label}                                        
+                                        {web3.project}                                        
                                       </Link>
                                   </ListItem>
                                 )
